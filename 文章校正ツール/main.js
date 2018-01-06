@@ -29,8 +29,11 @@
 
 
     for (var i = 0; i < text.length; i++) {
-      if ((isZen(text[i]) == true && isZen(text[i + 1]) == false )
+      if (text[i] == '{' || text[i] == '\n') {
+        continue;
+      }else if ((isZen(text[i]) == true && isZen(text[i + 1]) == false )
       || (isZen(text[i]) == false && isZen(text[i + 1]) == true )) {
+        if (text[i + 1] == '}') {continue;}
         spacenum[j] = i+1;
         j++;
       }

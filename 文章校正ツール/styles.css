@@ -3,14 +3,18 @@ textarea {
 }
 
 button {
-  width: 80px;
-  height: 40px;
+  width: 120px;
+  height: 60px;
   border-radius: 5px;
-  position: absolute;
+  /* position: absolute; */
+}
+
+span {
+  font-size: 25px;
 }
 
 p {
-  font-size: 15 px;
+  font-size: 15px;
 }
 
 img {
